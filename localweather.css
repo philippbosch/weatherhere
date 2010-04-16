@@ -12,12 +12,15 @@ body {
     font-size: 24px;
 }
 #today, #tomorrow {
-    background: #1670bc -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0)));
+    background-color: #1670bc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0)));
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0));
     border: 4px solid #D6E5F2;
     padding: 0 10px;
     -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     -webkit-box-shadow: rgba(255,255,255,0.8) 0px 1px 16px;
-    position: relative;
+    -moz-box-shadow: rgba(255,255,255,0.8) 0px 1px 16px;
     position: relative;
 }
 #today {
@@ -44,6 +47,7 @@ body {
     left: 50%;
     margin-left: -24px;
     -webkit-background-size: 48px;
+    -moz-background-size: 48px;
 }
 #high-low {
     position: absolute;
@@ -75,10 +79,14 @@ body {
     margin-top: 20px;
     width: 100%;
     -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 6px;
+    -moz-box-shadow: rgba(255,255,255,0.5) 0 0 6px;
     border: 0;
     -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     height: 40px;
-    background: #1261a4 -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,0.3)), color-stop(50%, rgba(0,0,0,0.4)), to(rgba(0,0,0,0.5)));
+    background-color: #1261a4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,0.3)), color-stop(50%, rgba(0,0,0,0.4)), to(rgba(0,0,0,0.5)));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.5));
     font-size: 18px;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
