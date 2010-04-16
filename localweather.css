@@ -11,19 +11,34 @@ body {
     font-weight: bold;
     font-size: 24px;
 }
-#weather {
+#today, #tomorrow {
     background: #1670bc -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0)));
     border: 4px solid #D6E5F2;
     padding: 0 10px;
     -webkit-border-radius: 20px;
     -webkit-box-shadow: rgba(255,255,255,0.8) 0px 1px 16px;
     position: relative;
+    margin-bottom: 20px;
+    position: relative;
 }
-#condition {
-    height: 128px;
+#tomorrow {
+    height: 48px;
+}
+.condition {
     background-position: center center;
     background-repeat: no-repeat;
     font-size: 400%;
+}
+#today .condition {
+    height: 128px;
+}
+#tomorrow .condition {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    -webkit-background-size: 48px;
 }
 #high-low {
     position: absolute;
@@ -34,11 +49,29 @@ body {
     font-weight: bold;
     font-size: 18px;
 }
-#low {
+#low, #tomorrow-low {
     opacity: 0.4;
 }
+
+#tomorrow {
+    line-height: 48px;
+    font-size: 150%;
+}
+
+#tomorrow-weekday {
+    float: left;
+}
+
+#tomorrow-high-low {
+    float: right;
+}
+
+#tomorrow-high, #tomorrow-low {
+    display: inline-block;
+    margin-left: 0.3em;
+}
+
 #update {
-    margin-top: 20px;
     width: 100%;
     -webkit-box-shadow: rgba(255,255,255,0.5) 0 0 6px;
     border: 0;

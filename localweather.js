@@ -44,10 +44,20 @@ function updateWeather(coords) {
             if (condition_code.length == 1) {
                 condition_code = '0' + condition_code;
             }
+            var forecast_code = String(forecast[1].code);
+            if (forecast_code.length == 1) {
+                forecast_code = '0' + forecast_code;
+            }
             if (weatherConditionMapping[condition_code]) condition_code = weatherConditionMapping[condition_code];
-            $('#condition').text(condition.temp + '°').css('background-image', 'url("img/' + condition_code + '.png")');
+            $('#today .condition').text(condition.temp + '°').css('background-image', 'url("img/' + condition_code + '.png")');
             $('#high').text('H: ' + forecast[0].high + '°');
             $('#low').text('T: ' + forecast[0].low + '°');
+            
+            $('#tomorrow .condition').css('background-image', 'url("img/' + forecast_code + '.png")');
+            $('#tomorrow-weekday').text(forecast[1].day);
+            $('#tomorrow-high').text(forecast[1].high + '°');
+            $('#tomorrow-low').text(forecast[1].low + '°');
+            
             $('#status').text('');
             $('#update').attr('disabled', false);
         });
