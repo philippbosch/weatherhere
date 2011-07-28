@@ -1,0 +1,145 @@
+/* line 17, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../.virtualenvs/weatherhere/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, ../sass/app.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 10, ../sass/app.scss */
+body {
+  background: #84b3de;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  padding: 20px;
+  padding-top: 35px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #accce9;
+}
+
+/* line 19, ../sass/app.scss */
+#place {
+  text-align: center;
+}
+
+/* line 23, ../sass/app.scss */
+#today, #tomorrow {
+  overflow: hidden;
+  *zoom: 1;
+  letter-spacing: -1px;
+}
+
+/* line 28, ../sass/app.scss */
+#today-condition, #tomorrow-condition {
+  display: inline;
+  float: left;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+/* line 34, ../sass/app.scss */
+#today-condition {
+  width: 70%;
+}
+
+/* line 38, ../sass/app.scss */
+#tomorrow-condition {
+  width: 30%;
+  height: 52px;
+}
+
+/* line 43, ../sass/app.scss */
+#tomorrow-weekday {
+  width: 40%;
+  display: inline;
+  float: left;
+}
+
+/* line 48, ../sass/app.scss */
+#today-high-low, #tomorrow-high-low {
+  display: inline;
+  float: right;
+  width: 30%;
+  padding-top: 0.3em;
+  font-size: 200%;
+  text-align: right;
+}
+
+/* line 56, ../sass/app.scss */
+#today-condition {
+  font-size: 800%;
+}
+
+/* line 60, ../sass/app.scss */
+#tomorrow-weekday {
+  font-size: 300%;
+}
+
+/* line 64, ../sass/app.scss */
+#tomorrow {
+  margin-top: 30px;
+}

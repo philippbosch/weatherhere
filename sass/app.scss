@@ -1,0 +1,66 @@
+@import "compass/reset";
+@import "compass";
+
+$blue: #84B3DE;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    @include background($blue);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    padding: 20px;
+    padding-top: 35px;
+    @include box-sizing(border-box);
+    color: lighten($blue, 10%);
+}
+
+#place {
+    text-align: center;
+}
+
+#today, #tomorrow {
+    @include clearfix;
+    letter-spacing: -1px;
+}
+
+#today-condition, #tomorrow-condition {
+    @include float(left);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#today-condition {
+    width: 70%;
+}
+
+#tomorrow-condition {
+    width: 30%;
+    height: 52px;
+}
+
+#tomorrow-weekday {
+    width: 40%;
+    @include float(left);
+}
+
+#today-high-low, #tomorrow-high-low {
+    @include float(right);
+    width: 30%;
+    padding-top: 0.3em;
+    font-size: 200%;
+    text-align: right;
+}
+
+#today-condition {
+    font-size: 800%;
+}
+
+#tomorrow-weekday {
+    font-size: 300%;
+}
+
+#tomorrow {
+    margin-top: 30px;
+}

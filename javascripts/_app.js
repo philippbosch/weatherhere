@@ -1,11 +1,21 @@
+navigator.geolocation.watchPosition(function(position) {
+    
+}, function(error) {
+    
+}, {
+    'enableHighAccuracy': true
+});
+
+
+
+
 function update(e) {
     $('#update').attr('disabled', true);
     $('#status').text('Detecting geoposition …');
     window.navigator.geolocation.getCurrentPosition(function(position) {
+        console.log(position.coords.latitude+','+position.coords.longitude);
         updateWeather(position.coords);
     }, function(e) {
-        var coordsFallback = {'latitude': 52.5317432, 'longitude': 13.4272981};
-        updateWeather(coordsFallback);
         $('#status').text('Unable to detect geoposition.');
     });
 }

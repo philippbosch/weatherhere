@@ -1,29 +1,27 @@
 <!doctype html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>LocalWeather</title>
+        <title>Weather Here</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" href="touch-icon.png">
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="localweather.js"></script>
-        <link rel="stylesheet" type="text/css" href="localweather.css">
+        <script type="text/javascript" src="javascripts/zepto.min.js"></script>
+        <script type="text/javascript" src="javascripts/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
     </head>
     
     <body>
-        <div id="place">&nbsp;</div>
+        <div id="place"> </div>
         <div id="today">
-            <div class="condition">&nbsp;</div>
-            <div id="high-low"><div id="high">&nbsp;</div><div id="low">&nbsp;</div></div>
+            <div id="today-condition"> </div>
+            <div id="today-high-low"><div id="today-high"> </div><div id="today-low"> </div></div>
         </div>
         <div id="tomorrow">
-            <div class="condition"></div>
-            <div id="tomorrow-weekday">&nbsp;</div>
-            <div id="tomorrow-high-low"><div id="tomorrow-high">&nbsp;</div><div id="tomorrow-low">&nbsp;</div></div>
+            <div id="tomorrow-weekday"> </div>
+            <div id="tomorrow-condition"> </div>
+            <div id="tomorrow-high-low"><div id="tomorrow-high"> </div><div id="tomorrow-low"> </div></div>
         </div>
-        <button id="update">Update</button>
-        <div id="status">&nbsp;</div>
+        <div id="status"> </div>
     </body>
 </html>
